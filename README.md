@@ -57,6 +57,18 @@ Guide for building high-quality MCP (Model Context Protocol) servers and tool AP
 - Skill: `skills/mcp-builder/SKILL.md`
 - Reference library: `skills/mcp-builder/reference/`
 
+### numscript-guidelines
+
+Numscript guidelines for modeling financial transactions with Numscript (DSL).
+
+**Use when:**
+- Writing or reviewing Numscript programs
+- Modeling complex money movements and splits
+
+**Docs:**
+- Skill: `skills/numscript-guidelines/SKILL.md`
+- Reference library: `skills/numscript-guidelines/reference/`
+
 ## Installation
 
 ```bash

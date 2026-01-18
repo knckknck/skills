@@ -204,3 +204,17 @@ This will look into all the `src/domain/numscript` folder to find all the `<file
 ---
 
 ## Quick Reference
+
+Full documentation: [@reference](./reference)
+
+- [Program Structure](./reference/program-structure.md) (how a script is composed)
+- [Send](./reference/send.md) (postings, `*` balance sends — includes examples)
+- [Sources](./reference/source.md) (single, multiple, capped sources — includes examples)
+- [Destinations](./reference/destinations.md) (allocations, caps, nested blocks — includes examples)
+- [Variables](./reference/variables.md) (vars block + JSON injection — includes examples)
+- [UMN](./reference/unambiguous-monetary-notation.md) (safe monetary notation + examples table)
+- [Rounding](./reference/rounding.md) (remainder distribution behavior — includes examples)
+- [Overdraft](./reference/overdraft.md) (missing funds and negative balances)
+- [Save](./reference/save.md) (saving intermediate amounts — includes examples)
+- [Metadata](./reference/metadata.md) (account and tx metadata helpers)
+- [Numscript Specs Format](./reference/numscript-specs-format.md) (JSON test specs — includes examples)
