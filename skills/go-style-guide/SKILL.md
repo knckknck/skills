@@ -1,9 +1,9 @@
 ---
-name: go-best-practices
+name: go-style-guide
 description: Go programming best practices and style guide. This skill should be used when writing, reviewing, or refactoring Go code to ensure optimal performance patterns. Triggers on tasks involving Go code, data structures, concurrency, or performance improvements.
 license: APACHE-2.0
 metadata:
-  author: direkt
+  author: Direkt, Inc.
   version: "1.0.0"
 ---
 
