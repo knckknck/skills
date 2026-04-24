@@ -1,10 +1,6 @@
 ---
 name: go-style-guide
-description: Go programming best practices and style guide. This skill should be used when writing, reviewing, or refactoring Go code to ensure optimal performance patterns. Triggers on tasks involving Go code, data structures, concurrency, or performance improvements.
-license: APACHE-2.0
-metadata:
-  author: Direkt, Inc.
-  version: "1.0.0"
+description: Go programming best practices and style guide for writing, reviewing, refactoring, and modernizing Go code. Use for Go code reviews, concurrency patterns, error handling, API design, performance-sensitive code, testing, linting, Go-version compatibility, and idiomatic Go style decisions.
 ---
 
 # Go Best Practices
@@ -24,7 +20,28 @@ Reference these guidelines when:
 - Writing new Go code
 - Reviewing code for performance issues
 - Refactoring existing Go code
-- Optimizing performance, latency, or allocations
+- Optimizing performance, latency, or allocations, while avoiding micro-optimizations outside hot paths
+- Reviewing code for Go-version-sensitive behavior
+- Modernizing older Go code to current idioms
+- Editing code for readability, maintainability, and consistency
+
+## Version-sensitive guidance
+
+Before applying advice, consider the project’s target Go version.
+
+Important version-sensitive areas include:
+
+- Go 1.20+: `errors.Join` and multiple `%w` wrapping
+- Go 1.22+: loop variables are scoped per iteration
+- Go 1.23+: timer and ticker garbage collection and channel behavior changed
+- Go 1.25+: `sync.WaitGroup.Go`
+- Go 1.26+: `fmt.Errorf("x")` allocation behavior and `errors.AsType`
+
+If the target Go version is unknown, prefer guidance compatible with the two most recent stable Go releases, and call out compatibility notes when relevant.
+
+Performance guidance should be applied primarily to hot paths or allocation-sensitive code. Avoid recommending broad rewrites based only on old benchmark numbers. Prefer explaining the likely trade-off and recommending measurement with benchmarks where the impact matters.
+
+The guidance is version-aware. When reviewing or generating code, account for the target Go version, especially for behavior introduced in Go 1.20 through Go 1.26 such as errors.Join, loop variable semantics, timer behavior, WaitGroup.Go, and fmt.Errorf allocation changes.
 
 ## Rule Categories by Priority
 
