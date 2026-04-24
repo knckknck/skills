@@ -18,7 +18,7 @@ been amended based on feedback from others.
   
 We thank them for creating this roadmap for us and present our keyboards to those who contributed.
 
-  [Mertcan Görken]: https://github.com/blackrowe
+  [Mertcan Görken]: https://github.com/knckknck
   
 This documents idiomatic conventions in Go code that we follow at Direkt. A lot
 of these are general guidelines for Go, while others extend upon external
